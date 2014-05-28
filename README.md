@@ -1,10 +1,10 @@
- # ¿Que es string-replacement?
-
+¿Que es string-replacement?
+===========================
 
 Es una clase PHP que reemplaza palabras o frases dentro de un trozo/cadena HTML con unos enlaces especificados para cada palabra o frase dada.
 
- # ¿Como funciona?
-
+¿Como funciona?
+===============
 
 Tan solo hay que hacer un include del fichero src/string-replacement.php y instanciar el metodo estático:
 
