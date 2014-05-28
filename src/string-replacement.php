@@ -1,7 +1,7 @@
 <?php
 
     
-	static class StringReplacement {
+	class StringReplacement {
 
         /**
          * A partir de una cadena dada reemplaza las keywords que se le pasan por parámetro con sus respectivos enlaces.
@@ -13,12 +13,12 @@
          *
          * @return String   Cadena con las keywords reemplazadas por sus respectivos enlaces.
          */
-		public function reemplazaEnlaces($cadena, $enlaces, $ex=NULL, $una=TRUE, $_blank=FALSE)
+		public static function reemplazaEnlaces($cadena, $enlaces, $ex=NULL, $una=TRUE, $_blank=FALSE)
 		{
 			global $links, $etiquetas, $excluidas, $suna;
 
-			$links = $l;
-			$excluidas = $this->entidades_excluidas ? array_map('strtolower', $this->entidades_excluidas) : array();
+			$links = $enlaces;
+			$excluidas = $ex ? array_map('strtolower', $ex) : array();
 			$suna = $una;
 			$etiquetas = array();
             $target = ($_blank) ? 'target="_blank"' : '';

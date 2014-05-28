@@ -25,8 +25,9 @@
     $no_reemplazo_en = array('strong');
 
     // Reemplazamos las keywords incluidas en $keywords_reemplazo en la cadena $cadena_ejemplo. 
-    // Sin embargo no nos reemplazará en la cadena dentro de la etiqueta <strong>.
-    $cadena_salida = StringReplacement::reemplazaEnlaces($cadena_ejemplo, $keywords_reemplazo, $no_reemplazo_en);
+    // Sin embargo no nos reemplazará en la cadena dentro de la etiqueta <strong> 
+    // OJO: el 4ª parámetro es false para indicarle que el término "libero" lo reemplace todas las veces que lo encuentre.
+    $cadena_salida = StringReplacement::reemplazaEnlaces($cadena_ejemplo, $keywords_reemplazo, $no_reemplazo_en, FALSE);
 
 
     echo $cadena_salida;
